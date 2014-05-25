@@ -12,7 +12,7 @@ namespace WCFTutorial
     public class PersonService : IPersonService
     {
 
-        public string GetName(int personID)
+        public string GetName(string personID)
         {
             return "Andrew Brincat";
         }
@@ -34,10 +34,13 @@ namespace WCFTutorial
             return response;
         }
 
-        public PersonResponse getPerson(int personID)
+        public PersonResponse getPerson(string personID)
         {
             PersonResponse response = new PersonResponse();
             response.Person = new PersonRequest();
+            response.Person.Address = "Street 123, Mosta";
+            response.Person.Name = "Andrew";
+            response.Person.Surname = "Brincat";
             response.IsErrorFound = false;
             return response;
         }

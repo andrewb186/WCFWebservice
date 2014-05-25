@@ -10,12 +10,12 @@ namespace WCFTutorial.Objects
     [DataContract]
     public class PersonResponse
     {
-        private bool _IsErrorFound;
+        private bool _ErrorFound;
         [DataMember]
         public bool IsErrorFound
         {
-            get { return _IsErrorFound; }
-            set { _IsErrorFound = value; }
+            get { return _ErrorFound; }
+            set { _ErrorFound = value; }
         }
 
 
