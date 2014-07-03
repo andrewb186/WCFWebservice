@@ -17,7 +17,7 @@ namespace WCFTutorial
             return "Andrew Brincat";
         }
 
-        public PersonResponse insertPerson(Objects.PersonRequest request)
+        public PersonResponse insertPerson(PersonRequest request)
         {
             PersonResponse response = new PersonResponse();
             response.Person = request;
@@ -26,7 +26,7 @@ namespace WCFTutorial
             return response;
         }
 
-        public PersonResponse updatePerson(Objects.PersonRequest request)
+        public PersonResponse updatePerson(PersonRequest request)
         {
             PersonResponse response = new PersonResponse();
             response.Person = new PersonRequest();
