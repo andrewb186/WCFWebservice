@@ -21,7 +21,7 @@ namespace WCFTutorial
 
         [OperationContract]
         [WebInvoke(UriTemplate = "insertperson",
-                   Method = "PUT",
+                   Method = "POST",
                    BodyStyle = WebMessageBodyStyle.Bare,
                    RequestFormat=WebMessageFormat.Json)]
         PersonResponse insertPerson(PersonRequest request);
