@@ -53,6 +53,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account.svc" />
     <Content Include="PersonService.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -65,6 +66,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.svc.cs">
+      <DependentUpon>Account.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IAccount.cs" />
     <Compile Include="Objects\ContactsResponse.cs" />
     <Compile Include="Objects\PersonRequest.cs" />
     <Compile Include="Objects\PersonResponse.cs" />
